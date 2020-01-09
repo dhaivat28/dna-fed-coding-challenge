@@ -9,7 +9,7 @@ We're interested to see how you would build the design included in this repo usi
 - That you write clean, structured, semantic html.
 - Your approach to writing, and knowledge of CSS, including the use of modern features where appropriate.
 - You have a strong attention to detail and can replicate designs.
-- You can deliver a sound experience across all device sizes from the design provided.
+- You can deliver a sound responsive experience across all device sizes from the design provided.
 - Your work demonstates efficiency and best practice, while keeping things simple where possible.
 
 We don't want you to spend too much of your own time to complete this - provide whatever you feel can represent your current FE skill-set within a reasonable effort.
