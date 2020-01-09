@@ -1,0 +1,15 @@
+{
+  "name": "fed-coding-challenge",
+  "version": "1.0.0",
+  "description": "Front End Developer Coding Challenge",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.24.3"
+  }
+}
