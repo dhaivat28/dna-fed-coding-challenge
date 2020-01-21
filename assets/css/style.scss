@@ -21,9 +21,7 @@ img {
 }
 
 .flex-container{
-      border: 1px solid orange;
       // width: 80%;
-      min-height: 300px;
       margin: 0 auto;
       display: -webkit-flex; /* Safari */     
       display: flex; /* Standard syntax */
@@ -31,21 +29,53 @@ img {
 
 .flex-container .column{
       padding: 10px;
-      background: #dbdfe5;
-      flex: 1;
+      background: #ffffff;
+      flex: 1;    
       -webkit-flex: 1; /* Safari */
       -ms-flex: 1; /* IE 10 */
-      
   }
 
-  .flex-container .column.bg-alt{
-      background: #b4bac0;
-  }
-      
+.flex-container .column.bg-alt{
+      background:#FCE4B6;
+}
+
+.vertical-center {
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+}
+
 /* Header */
 header {
       position: absolute;
-      border: 1px solid black;
+      left: 0;
+      right: 0;
 }
 
 /* Home-hero */
+.home-hero {
+      border-bottom:1px solid #F0F0F0;
+}
+
+.hero-watch {
+      height:85%;
+      margin-left: -10%;
+}
+
+.watch-description {
+      border:2px solid red;
+      
+}
+
+/* title */
+.title {
+
+      font-size:2.5 rem;
+}      
+
+/* Html for button */
+.showcase {
+      text-align: center;
+      border-left:1px solid #F0F0F0;
+      width: 33.33%;
+}
