@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./assets/css/style.scss">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -73,25 +73,16 @@
 
 						<div class="carousel-inner" role="listbox">
 						
-						  <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
-						    <div class="carousel-caption d-none d-md-block">
-							<h2 class="display-4">First Slide</h2>
-							<p class="lead">This is a description for the first slide.</p>
-						    </div>
+						  <div class="carousel-item active" style="background-image: url('./assets/images/moods-watch-1.jpg')">
+						
 						  </div>
 						  
-						  <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
-						    <div class="carousel-caption d-none d-md-block">
-							<h2 class="display-4">Second Slide</h2>
-							<p class="lead">This is a description for the second slide.</p>
-						    </div>
+						  <div class="carousel-item" style="background-image: url('./assets/images/moods-watch-2.jpg')">
+						   
 						  </div>
 						 
-						  <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
-						    <div class="carousel-caption d-none d-md-block">
-							<h2 class="display-4">Third Slide</h2>
-							<p class="lead">This is a description for the third slide.</p>
-						    </div>
+						  <div class="carousel-item" style="background-image: url('./assets/images/moods-watch-3.jpg')">
+						    
 						  </div>
 						</div>
 
@@ -118,7 +109,62 @@
 		</div>
 	</section>
 
-	<!-- <img src="./assets/images/watch.png" alt="Watch"> -->
+	<section class="footer">
+		<div class="tabs">
+			
+			<ul class="tabs-list">
+			   <li class="active"><a href="#tab1">Description</a></li>
+			   <li ><a href="#tab2">Warranty</a></li>
+			   <li ><a href="#tab3">Reviews</a></li>
+			</ul>
+		    
+			<div id="tab1" class="tab active">
+			   
+			   <p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				<br><br>
+				Curabitur vulputate, leo id imperdiet vestibulum, dolor est venenatis libero, ut vehicula massa mi quis est. Pellentesque et pulvinar urna. Curabitur pulvinar lectus sit amet odio euismod, 
+			   </p>
+			</div>
+			<div id="tab2" class="tab">
+			
+			  <p>
+			   
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+			  </p>
+			</div>
+			<div id="tab3" class="tab">
+			
+			  <p>
+			    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+			  </p>
+			</div>
+		    
+		    </div>
+
+	</section>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+		  $(".tabs-list li a").click(function(e){
+		     e.preventDefault();
+		  });
+		
+		  $(".tabs-list li").click(function(){
+		     var tabid = $(this).find("a").attr("href");
+		     $(".tabs-list li,.tabs div.tab").removeClass("active");   // removing active class from tab
+		
+		     $(".tab").hide();   // hiding open tab
+		     $(tabid).show();    // show tab
+		     $(this).addClass("active"); //  adding active class to clicked tab
+		
+		  });
+		
+		});
+		</script>
+	
 	<script src="./assets/js/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
