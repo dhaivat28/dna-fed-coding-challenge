@@ -1,1 +1,26 @@
 @import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+}
+
+* {
+      box-sizing: border-box;
+}
+
+img {
+      max-width:100%;
+      height:auto;
+
+}
+
+/* Header */
+header {
+      // position: absolute;
+      margin-top: 1em;
+      border: 1px solid black;
+}
+
+/* Home-hero */
