@@ -28,7 +28,6 @@ img {
 }
 
 .flex-container .column{
-      padding: 10px;
       background: #ffffff;
       flex: 1;    
       -webkit-flex: 1; /* Safari */
@@ -37,6 +36,17 @@ img {
 
 .flex-container .column.bg-alt{
       background:#FCE4B6;
+}
+
+
+.slider-box {
+      border: 1px solid red;
+      
+}
+
+#carouselExampleIndicators {
+    margin:20px;
+    
 }
 
 .vertical-center {
@@ -64,26 +74,23 @@ header {
 
 .watch-description {
       border:2px solid red;
-      
 }
 
 /* title */
 .title {
-
       font-size:2.5 rem;
 }      
 
-/* Html for button */
+/* Html for button */ 
 .showcase {
       text-align: center;
       border-left:1px solid #F0F0F0;
       width: 33.33%;
 }
 
-
 .carousel-item {
-      height: 100vh;
-      min-height: 350px;
+      height:300px;
+      width: 300px;
       background: no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
