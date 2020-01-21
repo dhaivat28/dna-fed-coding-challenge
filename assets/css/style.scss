@@ -38,15 +38,21 @@ img {
       background:#FCE4B6;
 }
 
+.flex-container .column.bg-alt1{
+      background:#FCE4B6;
+      height: 600px;
+}
 
 .slider-box {
-      border: 1px solid red;
       
+      position:absolute;
 }
 
 #carouselExampleIndicators {
-    margin:20px;
-    
+      position: absolute;
+      left: 40rem;
+      top:7rem;
+      width:400px;
 }
 
 .vertical-center {
@@ -86,11 +92,11 @@ header {
       text-align: center;
       border-left:1px solid #F0F0F0;
       width: 33.33%;
+      padding: 4rem 0 4rem 0;
 }
 
 .carousel-item {
-      height:300px;
-      width: 300px;
+      height:400px;
       background: no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
