@@ -1,5 +1,4 @@
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body {
       margin: 0;
@@ -21,7 +20,6 @@ img {
 }
 
 .flex-container{
-      // width: 80%;
       margin: 0 auto;
       display: -webkit-flex; /* Safari */     
       display: flex; /* Standard syntax */
@@ -50,7 +48,7 @@ img {
 
 #carouselExampleIndicators {
       position: absolute;
-      left: 40rem;
+      left: 30vw;
       top:7rem;
       width:400px;
 }
@@ -59,6 +57,42 @@ img {
       display: flex;
       align-items: center;
       justify-content:space-around;
+}
+
+/* Typography */
+h1 {
+      font-family:Helvetica, sans-serif;
+      color: #2C2E2F;
+}
+
+h1.title {
+      letter-spacing: 9px;
+      text-align: center;
+      font-weight:800;
+      font-size: 72px;
+}
+
+h3 {
+      font-family:Helvetica, sans-serif;
+      color: #2C2E2F;
+}
+
+h3 span {
+      color:#b1adad;
+      text-decoration: line-through;
+      padding-left: 5px;
+      font-weight: normal;
+}
+
+h3.subtitle {
+      font-size: 16px;
+      font-weight: normal; 
+}
+
+h3.pricetag {
+      font-size: 18px;
+      font-weight: 600;
+      
 }
 
 /* Header */
@@ -79,13 +113,8 @@ header {
 }
 
 .watch-description {
-      border:2px solid red;
+     text-align: center;
 }
-
-/* title */
-.title {
-      font-size:2.5 rem;
-}      
 
 .posts {
       border-top:1px solid #F0F0F0;
@@ -195,3 +224,42 @@ header {
           width:80px;
       }
   }   
+
+/**************/
+/**************/
+/* Css Button */ 
+/**************/
+/**************/
+
+  .example_c {
+      color: #ffffff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #2C2E2F;
+      padding: 20px;
+      border: 1px solid #757575;
+      display: inline-block;
+      transition: all 0.4s ease 0s;
+      box-shadow: 0 4px 12px 0 rgba(0,0,0,0.50);
+  }
+
+  .example_c:hover {
+      color: #ffffff !important;
+      background: #f6b93b;
+      border-color: #f6b93b !important;
+      transition: all 0.4s ease 0s;
+      text-decoration: none;
+  }
+
+i {
+      border: solid rgb(255, 255, 255);
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+}
+    
+.right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top:-1px;
+}

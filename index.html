@@ -23,9 +23,11 @@
 		<div class="flex-container">
 			<div class="column vertical-center">
 				<div class="watch-description">
-					<h1>CALEA</h1>
-					<h2>Inworks Collection</h2>
-					<h3>$1,499</h3>
+					<h1 class="title">CALEA</h1>
+					<h3 class="subtitle">Ironworks Collection</h3>
+					<h3 class="pricetag ">$1,499<span> $1,999</span></h3>
+					
+					<button class="example_c" type="button">Add to Cart <i class="arrow right"></i></button>
 				</div>
 			</div>
         		<div class="column bg-alt">
@@ -155,13 +157,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 		  $(".tabs-list li").click(function(){
 		     var tabid = $(this).find("a").attr("href");
 		     $(".tabs-list li,.tabs div.tab").removeClass("active");   // removing active class from tab
-		
 		     $(".tab").hide();   // hiding open tab
 		     $(tabid).show();    // show tab
 		     $(this).addClass("active"); //  adding active class to clicked tab
-		
 		  });
-		
 		});
 		</script>
 	
