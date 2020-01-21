@@ -13,13 +13,38 @@ body {
 img {
       max-width:100%;
       height:auto;
-
 }
 
+.container {
+      width: 95%;
+      margin: 0 auto;
+}
+
+.flex-container{
+      border: 1px solid orange;
+      // width: 80%;
+      min-height: 300px;
+      margin: 0 auto;
+      display: -webkit-flex; /* Safari */     
+      display: flex; /* Standard syntax */
+}
+
+.flex-container .column{
+      padding: 10px;
+      background: #dbdfe5;
+      flex: 1;
+      -webkit-flex: 1; /* Safari */
+      -ms-flex: 1; /* IE 10 */
+      
+  }
+
+  .flex-container .column.bg-alt{
+      background: #b4bac0;
+  }
+      
 /* Header */
 header {
-      // position: absolute;
-      margin-top: 1em;
+      position: absolute;
       border: 1px solid black;
 }
 
