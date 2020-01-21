@@ -3,7 +3,7 @@
 
 body {
       margin: 0;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -34,11 +34,11 @@ img {
   }
 
 .flex-container .column.bg-alt{
-      background:#FCE4B6;
+      background:#FDE4B6;
 }
 
 .flex-container .column.bg-alt1{
-      background:#FCE4B6;
+      background:#FDE4B6;
       height: 600px;
 }
 
@@ -69,6 +69,31 @@ h1 {
       color: #2C2E2F;
 }
 
+h1.logo {
+      font-family: 'Roboto', sans-serif;
+      font-size: 36px;
+      color: #2C2E2F;
+      letter-spacing:1.5px;
+      text-align: left;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+
+.logo::after {      
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 0 0 25px;
+      border-color: transparent transparent transparent #fde4b6;
+      margin-left:5px;
+      content: "";
+      display: inline-block;
+    }
+
+.logo-box {
+margin:2rem 0 0 2rem;
+}
+
 h1.title {
       letter-spacing: 9px;
       text-align: center;
@@ -96,7 +121,6 @@ h3.subtitle {
 h3.pricetag {
       font-size: 18px;
       font-weight: 600;
-      
 }
 
 h2 {
@@ -134,7 +158,7 @@ header {
 
 .hero-watch {
       height:85%;
-      margin-left: -10%;
+      margin-left: -15%;
 }
 
 .watch-description {
@@ -269,10 +293,7 @@ header {
   }
 
   .example_c:hover {
-      color: #ffffff !important;
-      background: #f6b93b;
-      border-color: #f6b93b !important;
-      transition: all 0.4s ease 0s;
+      cursor: pointer;
       text-decoration: none;
   }
 
