@@ -27,6 +27,7 @@
 
 .flex-container .column.bg-alt{
       background:$color-secondary;
+
 }
 
 .slider-box{
@@ -38,10 +39,17 @@
       }
 }
 
+.hero-flex-container-wrap {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include respond(tab-port){
+            @include flexWay(column-reverse);
+      }
+}
+
 .flex-container-wrap {
       flex-wrap: wrap;
       justify-content: space-between;
-
       @include respond(tab-port){
             @include flexWay(column);
       }
@@ -49,7 +57,7 @@
 
 .recentposts {
       @include respond(tab-port){
-            margin-top:3rem;
+            // margin-top:3rem;
             border-top: none;
       }
 }
@@ -58,8 +66,12 @@
 .hero-watch {
     max-height:550rem;
     margin-left: -15%;
-    //padding: 20% 0 5% 0;
     padding: 10rem 0 2.5rem 0;
+
+    @include respond(tab-port){
+      max-height: 50rem;
+      }
+
 }
 
 .hero-section-title {
@@ -76,7 +88,8 @@
     margin:6.25rem 0 6.25rem 25rem;
 
     @include respond(tab-port){
-      margin:6.25rem 0 6.25rem 5rem;
+      margin:6.25rem 5rem 6.25rem 5rem;
+      width:80%;
     }
 }
 

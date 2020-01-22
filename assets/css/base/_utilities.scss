@@ -1,5 +1,12 @@
 .u-center-text { text-align: center; }
 
+.mobile-margin-fix{
+      
+      @include respond(tab-port){
+            margin:5.5rem 0 5.5rem 0;
+      }
+}
+
 .vertical-center {
       display: flex;
       align-items: center;

@@ -76,6 +76,10 @@ h3 span {
             position:relative;
             display:inline-block;
 
+            @include respond(tab-port){
+                   margin-top:5rem;
+            }
+
             &:after {
                   content:'';
                   position:absolute;
