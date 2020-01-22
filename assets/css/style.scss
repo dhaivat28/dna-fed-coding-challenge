@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+@import "abstracts/variables";
 
 body {
       margin: 0;
@@ -27,18 +28,18 @@ img {
 }
 
 .flex-container .column{
-      background: #ffffff;
+      background:$color-primary;
       flex: 1;    
       -webkit-flex: 1; /* Safari */
       -ms-flex: 1; /* IE 10 */
   }
 
 .flex-container .column.bg-alt{
-      background:#FDE4B6;
+      background:$color-secondary;
 }
 
 .flex-container .column.bg-alt1{
-      background:#FDE4B6;
+      background:$color-secondary;
       height: 600px;
 }
 
@@ -71,13 +72,13 @@ img {
 
 h1 {
       font-family:Helvetica, sans-serif;
-      color: #2C2E2F;
+      color:$color-black;
 }
 
 h1.logo {
       font-family: 'Roboto', sans-serif;
       font-size: 36px;
-      color: #2C2E2F;
+      color: $color-black;
       letter-spacing:1.5px;
       text-align: left;
       font-weight: bold;
@@ -115,11 +116,11 @@ h1.title {
 
 h3 {
       font-family:Helvetica, sans-serif;
-      color: #2C2E2F;
+      color:$color-black;
 }
 
 h3 span {
-      color:#b1adad;
+      color:$color-grey;
       text-decoration: line-through;
       padding-left: 5px;
       font-weight: normal;
@@ -141,7 +142,7 @@ h2 {
 
 h2.spaced-title{
       font-size: 36px;
-      color: #2C2E2F;
+      color:$color-black;
       letter-spacing: 2.5px;
       text-align: center;
       line-height: 46px;
@@ -152,7 +153,7 @@ h2.spaced-title{
 h2.watchtitle {
       font-size: 36px;
       text-transform: uppercase;
-      color: #2C2E2F; 
+      color: $color-black; 
       letter-spacing: 4.5px;
 }
 
@@ -163,7 +164,7 @@ h4 {
 h4.label {
       font-size: 12px; 
       text-transform: uppercase;
-      color: #2C2E2F;
+      color: $color-black;
       padding-top: 15px;
       letter-spacing: 2px;
       position:relative;
@@ -178,7 +179,7 @@ h4.label {
       margin: 10px auto;
       width:60%;
       height:1px;
-      background:#979797;
+      background:$color-dark-grey;
   }
 
 
@@ -196,7 +197,7 @@ header {
 
 /* Home-hero */
 .home-hero {
-      border-bottom:1px solid #F0F0F0;
+      border-bottom:1px solid $color-border-grey;
 }
 
 .hero-watch {
@@ -211,14 +212,14 @@ header {
 }
 
 .posts {
-      border-top:1px solid #F0F0F0;
+      border-top:1px solid $color-border-grey;
       margin-bottom: 5rem;
 }
 
 /* Html for button */ 
 .showcase {
       text-align: center;
-      border-left:1px solid #F0F0F0;
+      border-left:1px solid $color-border-grey;
       padding: 4rem 0 4rem 0;
       min-width: 33%;
       position: relative;     
@@ -232,8 +233,8 @@ header {
       letter-spacing: 2px;
       writing-mode: tb-rl;
       transform: rotate(-180deg);
-      background:#2C2E2F;
-      color: #f5f5f5;
+      background:$color-black;
+      color:$color-sale-box-white;
       text-transform: uppercase;
       font-size: 12px;
       
@@ -273,7 +274,7 @@ header {
       width:100%;
       float:left;
       margin:0px;
-      color: #515254;
+      // color: #515254;
       padding-bottom: 1.2rem;
       text-align: center;
   }
@@ -284,18 +285,18 @@ header {
 
   .tabs .tabs-list li a{
       text-decoration: none;
-      color: #515254;
+      color:$tabs-title-grey;
   }
   
   /* Tab content section */
   .tabs .tab{
       padding-top: 3rem;
-      border-top: 1px solid #7e7e7e;
+      border-top: 1px solid $tabs-border-grey;
       display:none;
       min-height:250px;
       height:auto;
       border-radius:3px;
-      color:darkslategray;
+      color:$tabs-slate-grey;
       clear:both;
   }
 
@@ -316,12 +317,12 @@ header {
   }
   
   .tabs .tabs-list li.active{
-      color:black !important;
-      border-bottom: 1px solid #7e7e7e;
+      color:$color-pure-black !important;
+      border-bottom: 1px solid $tabs-border-grey;
   }
 
   .active a{
-      color:black !important;
+      color:$color-pure-black !important;
   }
   
   /* media query */
@@ -342,12 +343,12 @@ header {
 /**************/
 
   .example_c {
-      color: #ffffff !important;
+      color:$color-primary !important;
       text-transform: uppercase;
       text-decoration: none;
-      background: #2C2E2F;
+      background:$color-black;
       padding: 20px;
-      border: 1px solid #757575;
+      border: 1px solid $button-grey;
       display: inline-block;
       transition: all 0.4s ease 0s;
       box-shadow: 0 4px 12px 0 rgba(0,0,0,0.50);
@@ -358,9 +359,8 @@ header {
       text-decoration: none;
   }
 
-
   .example_d {
-      color: #2C2E2F !important;
+      color: $color-black !important;
       text-decoration: none;
       padding: 15px 30px 15px 30px;
       border: 1px solid rgba(151, 151, 151, 0.5);
@@ -375,7 +375,7 @@ header {
   }
 
 i {
-      border: solid rgb(255, 255, 255);
+      border: solid $color-primary;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
