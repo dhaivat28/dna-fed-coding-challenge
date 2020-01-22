@@ -38,10 +38,6 @@
       justify-content: space-between;
 }
 
-.slider-box {
-      position:absolute;
-}
-
 /* Home-hero */
 .hero-watch {
     max-height: 90%;
@@ -49,8 +45,11 @@
     padding: 20% 0 5% 0;
 }
 
-
 // Carousel
+.slider-box {
+    position:absolute;
+}
+
 #carouselExampleIndicators {
     position: absolute;
     left: 30vw;
