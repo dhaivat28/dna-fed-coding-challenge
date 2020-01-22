@@ -1,5 +1,9 @@
-header {
+.header {
       position: absolute;
       left: 0;
       right: 0;
+      
+      &__logo-box{
+            margin:2rem 0 0 2rem;
+      }
 }
