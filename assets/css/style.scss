@@ -72,6 +72,12 @@
       max-height: 50rem;
       }
 
+    @include respond(tab-land){
+      max-height:500px;
+      margin-left: -60%;
+      padding: 12rem 0 2.5rem 0;
+      }
+
 }
 
 .hero-section-title {
@@ -88,6 +94,11 @@
     margin:6.25rem 0 6.25rem 25rem;
 
     @include respond(tab-port){
+      margin:6.25rem 5rem 6.25rem 5rem;
+      width:80%;
+    }
+
+    @include respond(tab-land){
       margin:6.25rem 5rem 6.25rem 5rem;
       width:80%;
     }

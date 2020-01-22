@@ -79,6 +79,10 @@ h3 span {
             @include respond(tab-port){
                    margin-top:5rem;
             }
+            
+            @include respond(tab-land){
+                  margin-top:6rem;
+           }
 
             &:after {
                   content:'';
