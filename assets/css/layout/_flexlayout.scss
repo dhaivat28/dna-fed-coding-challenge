@@ -1,0 +1,41 @@
+.flex-container{
+      margin: 0 auto;
+      display: -webkit-flex; /* Safari */     
+      display: flex; /* Standard syntax */
+}
+
+.column{
+      background:$color-primary;
+      flex: 1;    
+      -webkit-flex: 1; /* Safari */
+      -ms-flex: 1; /* IE 10 */
+}
+
+.bg-alt{
+      background:$color-secondary;
+}
+
+.slider-box{
+      background:$color-secondary !important;
+      max-width:50%;
+
+      @include respond(tab-port){
+           max-width: 100%;
+      }
+}
+
+.hero-flex-container-wrap {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include respond(tab-port){
+            @include flexWay(column-reverse);
+      }
+}
+
+.flex-container-wrap {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include respond(tab-port){
+            @include flexWay(column);
+      }
+}

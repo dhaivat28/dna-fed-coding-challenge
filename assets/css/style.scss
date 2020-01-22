@@ -11,58 +11,15 @@
 @import "components/showcase";
 @import "layout/header";
 @import "layout/footer";
-
-.flex-container{
-      margin: 0 auto;
-      display: -webkit-flex; /* Safari */     
-      display: flex; /* Standard syntax */
-}
-
-.flex-container .column{
-      background:$color-primary;
-      flex: 1;    
-      -webkit-flex: 1; /* Safari */
-      -ms-flex: 1; /* IE 10 */
-}
-
-.flex-container .column.bg-alt{
-      background:$color-secondary;
-
-}
-
-.slider-box{
-      background:$color-secondary !important;
-      max-width:50%;
-
-      @include respond(tab-port){
-           max-width: 100%;
-      }
-}
-
-.hero-flex-container-wrap {
-      flex-wrap: wrap;
-      justify-content: space-between;
-      @include respond(tab-port){
-            @include flexWay(column-reverse);
-      }
-}
-
-.flex-container-wrap {
-      flex-wrap: wrap;
-      justify-content: space-between;
-      @include respond(tab-port){
-            @include flexWay(column);
-      }
-}
+@import "layout/flexlayout";
 
 .recentposts {
       @include respond(tab-port){
-            // margin-top:3rem;
             border-top: none;
       }
 }
 
-/* Home-hero */
+// Home Elements
 .hero-watch { 
       padding: 10rem 0 2.5rem 0;
       margin-left: -60%;
@@ -88,11 +45,10 @@
      position: absolute;
      margin-top: 5rem;
      left:50%;
-      // top:15%;
-      // left:50%;
-      transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
 }
 
+//Carousel
 #carouselExampleIndicators {
     width:25rem;
     margin:6.25rem 0 6.25rem 25rem;
@@ -108,8 +64,7 @@
     }
 
     @include respond(big-desktop){
-      margin:6.25rem 5rem 6.25rem 37rem;
-      
+      margin:6.25rem 5rem 6.25rem 37rem;   
  }
 }
 
