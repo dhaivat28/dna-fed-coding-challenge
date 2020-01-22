@@ -1,9 +1,7 @@
 @import "normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
-
 @import "abstracts/variables";
 @import "abstracts/mixins";
-
 @import "base/base";
 @import "base/utilities";
 @import "base/typography";
@@ -13,8 +11,6 @@
 @import "components/showcase";
 @import "layout/header";
 @import "layout/footer";
-
-
 
 .flex-container{
       margin: 0 auto;
@@ -27,7 +23,7 @@
       flex: 1;    
       -webkit-flex: 1; /* Safari */
       -ms-flex: 1; /* IE 10 */
-  }
+}
 
 .flex-container .column.bg-alt{
       background:$color-secondary;
@@ -36,6 +32,10 @@
 .slider-box{
       background:$color-secondary !important;
       max-width:50%;
+
+      @include respond(tab-port){
+           max-width: 100%;
+      }
 }
 
 .flex-container-wrap {
@@ -44,6 +44,13 @@
 
       @include respond(tab-port){
             @include flexWay(column);
+      }
+}
+
+.recentposts {
+      @include respond(tab-port){
+            margin-top:3rem;
+            border-top: none;
       }
 }
 
@@ -66,9 +73,11 @@
 
 #carouselExampleIndicators {
     width:25rem;
-    margin-top: 6.25rem;
-    margin-bottom: 6.25rem;
-    margin-left:25rem;
+    margin:6.25rem 0 6.25rem 25rem;
+
+    @include respond(tab-port){
+      margin:6.25rem 0 6.25rem 5rem;
+    }
 }
 
 .carousel-item {
