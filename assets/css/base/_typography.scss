@@ -1,49 +1,73 @@
 @import "../abstracts/variables";
 
+
+//primary font is roboto black
+//h1 title
 .heading-primary {
       color:$color-black;
       font-family:$primary-font;
+
+      &--logo {
+            font-size: 2.25rem; //36px 
+            letter-spacing:1.5px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:after {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 25px 0 0 25px;
+                  border-color: transparent transparent transparent #fde4b6;
+                  margin-left:5px;
+                  content: "";
+                  display: inline-block;
+            }
+      }
+
+      &--title {
+            letter-spacing: 9px;
+            text-align: center;
+            font-weight:800;
+            font-size: 72px;
+      }
+
+      &--pricetag {
+            font-size: 16px;
+            font-weight: 600;
+      }
+
 }
 
-h1.logo {
-      font-family: 'Roboto', sans-serif;
-      font-size: 36px;
-      color: $color-black;
-      letter-spacing:1.5px;
-      text-align: left;
-      font-weight: bold;
-      text-transform: uppercase;
-}
+.heading-secondary {
+      font-family: $secondary-font; //Open Sans Regular
+      color:$color-dark-grey;
 
-.logo::after {      
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 25px 0 0 25px;
-      border-color: transparent transparent transparent #fde4b6;
-      margin-left:5px;
-      content: "";
-      display: inline-block;
-    }
+      &--subtitle {
+            font-size: 12px;
+            font-weight: normal;  
+      }
 
+      &--label {
+            font-size: 16px; 
+            text-transform: uppercase;
+            color: $color-black;
+            padding-top: 15px;
+            letter-spacing: 2px;
+            position:relative;
+            display:inline-block;
 
-.hero-section-title {
-      position: absolute;
-      top:15%;
-      left:50%;
-      transform: translate(-50%, -50%);
-}
-
-h1.title {
-      letter-spacing: 9px;
-      text-align: center;
-      font-weight:800;
-      font-size: 72px;
-}
-
-h3 {
-      font-family:Helvetica, sans-serif;
-      color:$color-black;
+            &:after {
+                  content:'';
+                  position:absolute;
+                  left:0;right:0;
+                  bottom:60%;
+                  margin: 10px auto;
+                  width:60%;
+                  height:1px;
+                  background:$color-dark-grey;
+              }
+      }
 }
 
 h3 span {
@@ -53,15 +77,8 @@ h3 span {
       font-weight: normal;
 }
 
-h3.subtitle {
-      font-size: 16px;
-      font-weight: normal; 
-}
 
-h3.pricetag {
-      font-size: 18px;
-      font-weight: 600;
-}
+
 
 h2 {
       font-family: 'Roboto', sans-serif;
@@ -88,25 +105,10 @@ h4 {
       font-family: 'Open Sans', sans-serif;       
 }
 
-h4.label {
-      font-size: 12px; 
-      text-transform: uppercase;
-      color: $color-black;
-      padding-top: 15px;
-      letter-spacing: 2px;
-      position:relative;
-      display:inline-block;
+
+  .hero-section-title {
+      position: absolute;
+      top:15%;
+      left:50%;
+      transform: translate(-50%, -50%);
 }
-
-.label:after {
-      content:'';
-      position:absolute;
-      left:0;right:0;
-      bottom:60%;
-      margin: 10px auto;
-      width:60%;
-      height:1px;
-      background:$color-dark-grey;
-  }
-
-
