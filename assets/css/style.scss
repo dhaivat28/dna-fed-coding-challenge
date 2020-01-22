@@ -99,6 +99,13 @@ h1.logo {
 margin:2rem 0 0 2rem;
 }
 
+.hero-section-title {
+      position: absolute;
+      top:15%;
+      left:50%;
+      transform: translate(-50%, -50%);
+}
+
 h1.title {
       letter-spacing: 9px;
       text-align: center;
@@ -149,6 +156,10 @@ h2.watchtitle {
       letter-spacing: 4.5px;
 }
 
+.border-red {
+      border:1px solid red;
+}
+
 /* Header */
 header {
       position: absolute;
@@ -162,8 +173,10 @@ header {
 }
 
 .hero-watch {
-      height:85%;
-      margin-left: -15%;
+    
+    max-height: 90%;
+    margin-left: -15%;
+    padding: 20% 0 5% 0;
 }
 
 .watch-description {
