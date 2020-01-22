@@ -342,6 +342,22 @@ header {
       text-decoration: none;
   }
 
+
+  .example_d {
+      color: #2C2E2F !important;
+      text-decoration: none;
+      padding: 15px 30px 15px 30px;
+      border: 1px solid rgba(151, 151, 151, 0.5);
+      -webkit-background-clip: padding-box; /* for Safari */
+      background-clip: padding-box;
+      display: inline-block;
+  }
+
+  .example_d:hover {
+      cursor: pointer;
+      text-decoration: none;
+  }
+
 i {
       border: solid rgb(255, 255, 255);
       border-width: 0 3px 3px 0;
