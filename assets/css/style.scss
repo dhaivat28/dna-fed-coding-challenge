@@ -65,7 +65,7 @@
 /* Home-hero */
 .hero-watch { 
       padding: 10rem 0 2.5rem 0;
-      border: 1px solid blueviolet;
+      border: 3px solid blueviolet;
       margin-left: -60%;
 
     @include respond(tab-port){
@@ -74,14 +74,13 @@
       }
 
     @include respond(tab-land){
-      border:1px solid blue;
+      border:3px solid orange;
       max-height:500px;
-      margin-left: -60%;
       padding: 12rem 0 2.5rem 0;
       }
 
       @include respond(big-desktop){
-            border:1px solid green;
+            border:3px solid green;
             max-height:550rem;
             margin-left: -65%;
        }
@@ -99,7 +98,7 @@
 
 #carouselExampleIndicators {
     width:25rem;
-    margin:6.25rem 0 6.25rem 25rem;
+    margin:6.25rem 0 6.25rem 35rem;
 
     @include respond(tab-port){
       margin:6.25rem 5rem 6.25rem 5rem;
@@ -107,7 +106,7 @@
     }
 
     @include respond(tab-land){
-      margin:6.25rem 5rem 6.25rem 5rem;
+      margin:6.25rem 5rem 6.25rem 25rem;
       width:80%;
     }
 

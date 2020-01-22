@@ -27,6 +27,7 @@ html {
             font-size:56.25%;
       }
 
+      //width<50
       @include respond(tab-port) {
             font-size:50%;
       }
