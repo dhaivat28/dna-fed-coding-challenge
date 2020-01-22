@@ -1,3 +1,12 @@
+@mixin flexWay($direction)
+{
+      flex-direction: $direction;
+}
+
+@mixin bottomBorder()
+{
+      border-bottom:1px solid $color-border-grey;
+}
 
 
 @mixin  respond($breakpoint) {

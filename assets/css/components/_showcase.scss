@@ -1,3 +1,5 @@
+@import "../abstracts/mixins";
+
 .showcase {
       
       &__card {
@@ -5,7 +7,12 @@
             border-left:1px solid $color-border-grey;
             padding: 4rem 0 4rem 0;
             min-width: 33%;
-            position: relative;     
+            position: relative;   
+            
+            @include respond(tab-port){
+                  @include bottomBorder();
+            }
+            
       }
 
       &__sale-box {
