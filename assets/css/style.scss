@@ -8,6 +8,8 @@
 @import "components/button";
 @import "components/tabs";
 @import "components/showcase";
+@import "layout/header";
+@import "layout/footer";
 
 .flex-container{
       margin: 0 auto;
@@ -40,27 +42,12 @@
       position:absolute;
 }
 
-#carouselExampleIndicators {
-      position: absolute;
-      left: 30vw;
-      top:7rem;
-      width:400px;
-}
 
 .logo-box {
 margin:2rem 0 0 2rem;
 }
 
-
-/* Header */
-header {
-      position: absolute;
-      left: 0;
-      right: 0;
-}
-
 /* Home-hero */
-
 .hero-watch {
     max-height: 90%;
     margin-left: -15%;
@@ -69,6 +56,13 @@ header {
 
 .watch-description {
      text-align: center;
+}
+
+#carouselExampleIndicators {
+    position: absolute;
+    left: 30vw;
+    top:7rem;
+    width:400px;
 }
 
 .carousel-item {
@@ -80,6 +74,3 @@ header {
       background-size: cover;
 }
     
-.footer {
-      padding: 0 5% 10rem 5%;
-}

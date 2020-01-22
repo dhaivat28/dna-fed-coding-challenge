@@ -22,4 +22,8 @@
             font-size: $font-size-extra-small;
       }
 
+      &__watch {
+            height: auto;
+            max-width: 100%; 
+      }
 }
