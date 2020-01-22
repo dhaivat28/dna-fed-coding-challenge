@@ -76,4 +76,17 @@
       -o-background-size: cover;
       background-size: cover;
 }
-    
+
+//Fix
+
+@media (min-width:0) and (max-width: 499px) {
+      #carouselExampleIndicators {
+            margin:6.25rem 5rem 6.25rem 4.5rem;
+      }
+  }
+
+@media (min-width:500px) and (max-width: 899px) {
+      #carouselExampleIndicators {
+            margin:6.25rem 5rem 6.25rem 10rem;
+      }
+  }
