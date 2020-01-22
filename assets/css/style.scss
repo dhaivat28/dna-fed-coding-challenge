@@ -156,6 +156,33 @@ h2.watchtitle {
       letter-spacing: 4.5px;
 }
 
+h4 {     
+      font-family: 'Open Sans', sans-serif;       
+}
+
+h4.label {
+      font-size: 12px; 
+      text-transform: uppercase;
+      color: #2C2E2F;
+      padding-top: 15px;
+      letter-spacing: 2px;
+      position:relative;
+      display:inline-block;
+}
+
+.label:after {
+      content:'';
+      position:absolute;
+      left:0;right:0;
+      bottom:60%;
+      margin: 10px auto;
+      width:60%;
+      height:1px;
+      background:#979797;
+  }
+
+
+
 .border-red {
       border:1px solid red;
 }
