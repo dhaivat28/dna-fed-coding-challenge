@@ -4,6 +4,8 @@
 @import "base/base";
 @import "base/utilities";
 @import "base/typography";
+@import "pages/home";
+@import "components/button";
 
 .flex-container{
       margin: 0 auto;
@@ -43,12 +45,6 @@
       width:400px;
 }
 
-.vertical-center {
-      display: flex;
-      align-items: center;
-      justify-content:space-around;
-}
-
 .logo-box {
 margin:2rem 0 0 2rem;
 }
@@ -65,12 +61,8 @@ header {
 }
 
 /* Home-hero */
-.home-hero {
-      border-bottom:1px solid $color-border-grey;
-}
 
 .hero-watch {
-    
     max-height: 90%;
     margin-left: -15%;
     padding: 20% 0 5% 0;
@@ -78,11 +70,6 @@ header {
 
 .watch-description {
      text-align: center;
-}
-
-.posts {
-      border-top:1px solid $color-border-grey;
-      margin-bottom: 5rem;
 }
 
 /* Html for button */ 
