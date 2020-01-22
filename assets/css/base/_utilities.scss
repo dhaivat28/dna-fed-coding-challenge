@@ -6,6 +6,10 @@
       justify-content:space-around;
 }
 
+.border-fix {
+      border-top: 1px solid $color-border-grey;
+}
+
 // Margins
 .u-margin-bottom-small { margin-bottom: 1.5rem; }
 .u-margin-bottom-medium { margin-bottom: 4rem; }

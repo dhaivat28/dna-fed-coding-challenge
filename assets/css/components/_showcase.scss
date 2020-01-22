@@ -1,0 +1,25 @@
+.showcase {
+      
+      &__card {
+            text-align: center;
+            border-left:1px solid $color-border-grey;
+            padding: 4rem 0 4rem 0;
+            min-width: 33%;
+            position: relative;     
+      }
+
+      &__sale-box {
+            position: absolute;
+            left: 0;
+            padding:10px 3px 10px 3px;
+            display: inline-block;
+            letter-spacing: 2px;
+            writing-mode: tb-rl;
+            transform: rotate(-180deg);
+            background:$color-black;
+            color:$color-sale-box-white;
+            text-transform: uppercase;
+            font-size: $font-size-extra-small;
+      }
+
+}

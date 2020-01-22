@@ -1,95 +1,47 @@
-.btn {
+@import "../abstracts/variables";
 
-      &:link,
-      &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 10rem;
-        transition: all .2s;
-        position: relative;
-        font-size: $default-font-size;
+.custombutton {
+      
+      text-decoration: none;
+      display: inline-block;
+      font-family:$primary-font;
+      font-size:$font-size-extra-small;
+      letter-spacing: 1px;
+
+      &--black {
+            padding:20px;
+            text-transform: uppercase;
+            color:$color-primary;
+            background:$color-black;
+            border: 1px solid $button-grey;
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,0.50);
       }
-    
+
       &--white {
-        background-color:$color-white;
-        color: $color-grey-dark;
-        padding: 1.5rem 4rem;
-    
-          &::after {
-            background-color: $color-white ;
-          }
+            color: $color-black !important;
+            padding: 15px 30px 15px 30px;
+            border: 1px solid rgba(151, 151, 151, 0.5);
+            -webkit-background-clip: padding-box; /* for Safari */
+            background-clip: padding-box;
+            display: inline-block;
       }
-    
-      &--green {
-        background-color:$color-primary;
-        color:$color-white;
-        padding: 1.5rem 4rem;
-    
-          &::after {
-            background-color: $color-white ;
-          }
-      }
-    
+
       &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
-    
-        &::after {
-          transform: scale(1.5) scale(1.6);
-          opacity: 0;
-        }
+            cursor: pointer;
+            text-decoration: none;
       }
+}
+
+// Right Arrow
+i {
+      border: solid $color-primary;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+}
     
-      &:active{
-        transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-      }
-    
-      &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width:100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-      }
-    
-    
-      &--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
-      }
-    
-    }
-    
-    
-    .btn-text {
-      &:link,
-      &:visited{
-        font-size:$default-font-size;
-        color: $color-primary;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-primary;
-        padding: 3px;
-        transition: all .2s;
-      }
-    
-      &:hover {
-        background-color: $color-primary;
-        color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform: translateY(-2px);
-      }
-    
-      &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
-        transform: translateY(0);
-      }
-    }
-    
+.right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      margin-top:-1px;
+}
