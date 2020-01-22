@@ -1,14 +1,12 @@
 @import "../abstracts/variables";
 
-
-//primary font is roboto black
-//h1 title
+//heading-primary => Roboto 
 .heading-primary {
       color:$color-black;
       font-family:$primary-font;
 
       &--logo {
-            font-size: 2.25rem; //36px 
+            font-size: $font-size-medium;  
             letter-spacing:1.5px;
             font-weight: bold;
             text-transform: uppercase;
@@ -27,29 +25,50 @@
 
       &--title {
             letter-spacing: 9px;
-            text-align: center;
             font-weight:800;
-            font-size: 72px;
+            font-size:$font-size-large;
       }
 
       &--pricetag {
-            font-size: 16px;
+            font-size:$font-size-small;
             font-weight: 600;
+            letter-spacing: 1px;
       }
 
+      &--spaced-title{
+            font-size: $font-size-medium;
+            letter-spacing: 2.5px;
+            line-height: 46px;
+            text-transform: uppercase;
+            font-weight:bold;
+      }
+
+      &--watchtitle {
+            font-size: $font-size-medium;
+            text-transform: uppercase;
+            letter-spacing:5px;
+      }
 }
 
+h3 span {
+      color:$color-grey;
+      text-decoration: line-through;
+      padding-left: 5px;
+      font-weight: normal;
+}
+
+//heading-primary => Open Sans 
 .heading-secondary {
-      font-family: $secondary-font; //Open Sans Regular
+      font-family: $secondary-font; 
       color:$color-dark-grey;
 
       &--subtitle {
-            font-size: 12px;
+            font-size: $font-size-extra-small;
             font-weight: normal;  
       }
 
       &--label {
-            font-size: 16px; 
+            font-size: $font-size-small; 
             text-transform: uppercase;
             color: $color-black;
             padding-top: 15px;
@@ -70,41 +89,18 @@
       }
 }
 
-h3 span {
-      color:$color-grey;
-      text-decoration: line-through;
-      padding-left: 5px;
-      font-weight: normal;
+.paragraph{
+      font-family: $secondary-font;
+      color:$color-dark-grey;
+      
+      &--regular {
+            font-size:$font-size-small;
+      }
+      
+      &--small {
+            font-size:$font-size-super-small;
+      }
 }
-
-
-
-
-h2 {
-      font-family: 'Roboto', sans-serif;
-}
-
-h2.spaced-title{
-      font-size: 36px;
-      color:$color-black;
-      letter-spacing: 2.5px;
-      text-align: center;
-      line-height: 46px;
-      text-transform: uppercase;
-      font-weight:bold;
-}
-
-h2.watchtitle {
-      font-size: 36px;
-      text-transform: uppercase;
-      color: $color-black; 
-      letter-spacing: 4.5px;
-}
-
-h4 {     
-      font-family: 'Open Sans', sans-serif;       
-}
-
 
   .hero-section-title {
       position: absolute;
