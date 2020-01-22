@@ -9,7 +9,7 @@
       letter-spacing: 1px;
 
       &--black {
-            padding:20px;
+            padding:1.25rem;
             text-transform: uppercase;
             color:$color-primary;
             background:$color-black;
@@ -19,7 +19,7 @@
 
       &--white {
             color: $color-black !important;
-            padding: 15px 30px 15px 30px;
+            padding: 0.93rem 1.87rem 0.93rem 1.87rem;
             border: 1px solid rgba(151, 151, 151, 0.5);
             -webkit-background-clip: padding-box; /* for Safari */
             background-clip: padding-box;

@@ -1,6 +1,9 @@
 @import "normalize.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+
 @import "abstracts/variables";
+@import "abstracts/mixins";
+
 @import "base/base";
 @import "base/utilities";
 @import "base/typography";
@@ -10,6 +13,8 @@
 @import "components/showcase";
 @import "layout/header";
 @import "layout/footer";
+
+
 
 .flex-container{
       margin: 0 auto;
@@ -40,10 +45,21 @@
 
 /* Home-hero */
 .hero-watch {
-    max-height: 90%;
+    max-height:550rem;
     margin-left: -15%;
-    padding: 20% 0 5% 0;
+    //padding: 20% 0 5% 0;
+    padding: 10rem 0 2.5rem 0;
 }
+
+.hero-section-title {
+     position: absolute;
+     margin-top: 5rem;
+     left:50%;
+      // top:15%;
+      // left:50%;
+      transform: translate(-50%, -50%);
+}
+
 
 // Carousel
 .slider-box {
