@@ -74,6 +74,7 @@
     @include respond(tab-land){
       max-height:500px;
       padding: 12rem 0 2.5rem 0;
+      margin-left: 0%;
       }
 
       @include respond(big-desktop){
