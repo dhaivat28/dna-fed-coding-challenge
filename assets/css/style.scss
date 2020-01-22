@@ -33,9 +33,9 @@
       background:$color-secondary;
 }
 
-.flex-container .column.bg-alt1{
-      background:$color-secondary;
-      height: 600px;
+.slider-box{
+      background:$color-secondary !important;
+      max-width:50%;
 }
 
 .flex-container-wrap {
@@ -64,18 +64,11 @@
       transform: translate(-50%, -50%);
 }
 
-
-// Carousel
-.slider-box {
-    position:absolute;
-}
-
 #carouselExampleIndicators {
-    position: absolute;
-    left: 30vw;
-    top:7rem;
-    width:400px;
-    border: 1px solid red;
+    width:25rem;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    margin-left:25rem;
 }
 
 .carousel-item {
