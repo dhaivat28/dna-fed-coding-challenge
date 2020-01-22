@@ -63,21 +63,29 @@
 }
 
 /* Home-hero */
-.hero-watch {
-    max-height:550rem;
-    margin-left: -15%;
-    padding: 10rem 0 2.5rem 0;
+.hero-watch { 
+      padding: 10rem 0 2.5rem 0;
+      border: 1px solid blueviolet;
+      margin-left: -60%;
 
     @include respond(tab-port){
+      border:1px solid red;
       max-height: 50rem;
       }
 
     @include respond(tab-land){
+      border:1px solid blue;
       max-height:500px;
       margin-left: -60%;
       padding: 12rem 0 2.5rem 0;
       }
 
+      @include respond(big-desktop){
+            border:1px solid green;
+            max-height:550rem;
+            margin-left: -65%;
+       }
+      
 }
 
 .hero-section-title {
@@ -102,6 +110,11 @@
       margin:6.25rem 5rem 6.25rem 5rem;
       width:80%;
     }
+
+    @include respond(big-desktop){
+      margin:6.25rem 5rem 6.25rem 37rem;
+      
+ }
 }
 
 .carousel-item {
